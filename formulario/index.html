@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        body {
+            background-color: #fff5f5;
+            color: #b71c1c;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #d32f2f;
+            margin-top: 30px;
+        }
+
+        form {
+            background: #ffebee;
+            border: 2px solid #d32f2f;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 30px 25px;
+            box-shadow: 0 4px 12px rgba(183, 28, 28, 0.08);
+        }
+
+        label {
+            color: #b71c1c;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 4px;
+            margin-bottom: 16px;
+            border: 1px solid #d32f2f;
+            border-radius: 5px;
+            background: #fff;
+            color: #b71c1c;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #d32f2f;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b71c1c;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Formulário para Doação de Sangue</h1>
+    <form action="/submit" method="post">
+        <label for="name">Nome Completo:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="age">Idade:</label><br>
+        <input type="number" id="age" name="age" min="18" max="65" required><br><br>
+        <label for="bloodType">Tipo Sanguíneo:</label><br>
+        <select id="bloodType" name="bloodType" required>
+            <option value="">Selecione</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+        </select><br><br>
+        <label for="lastDonation">Data da Última Doação:</label><br>
+        <input type="date" id="lastDonation" name="lastDonation"><br><br>
+        <input type="submit" value="Enviar">
+</body>
+
+</html>

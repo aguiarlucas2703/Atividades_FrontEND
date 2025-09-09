@@ -1,0 +1,23 @@
+.lsita-1 li:first-child {
+    background: #caf;
+}
+
+.lista-1 li:last-child {
+    background: #cfa;
+}
+
+.lista-1 li:nth-child(3) {
+    background: #fda;
+}
+
+.lista-2 li:nth-child(odd) {
+    background: #cfa;
+}
+
+.lista-2 li:nth-child(even) {
+    background: #adf;
+}
+
+.lista-2 li:nth-child(4n) {
+    background: #caf;
+}

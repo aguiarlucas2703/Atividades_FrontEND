@@ -1,0 +1,91 @@
+body {
+    background: #fff;
+    color: #111;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background: #111;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: #f7f7f7;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    color: #111;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+a {
+    color: #111;
+    text-decoration: none;
+    border-bottom: 2px solid #111;
+    transition: border-color 0.2s;
+}
+
+a:hover {
+    border-bottom: 2px solid #555;
+}
+
+button,
+input[type="submit"] {
+    background: #111;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #333;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    color: #111;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #111;
+    border-radius: 8px;
+}
+
+div {
+    background-color: rgb(36, 36, 132);
+    color: white;
+}
